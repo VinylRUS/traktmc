@@ -1,0 +1,35 @@
+{
+  "id": "skeleton_patrol",
+  "title_key": "quest.trakt.daily.skeleton_patrol.title",
+  "offer_keys": [
+    "quest.trakt.daily.skeleton_patrol.offer.1",
+    "quest.trakt.daily.skeleton_patrol.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.skeleton_patrol.completion.1",
+    "quest.trakt.daily.skeleton_patrol.completion.2",
+    "quest.trakt.daily.skeleton_patrol.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.skeleton_patrol.progress"
+  },
+  "goals": [
+    {
+      "id": "skeletons",
+      "kind": "kill_entity",
+      "amount": 6,
+      "key": "daily.skeleton_patrol.progress",
+      "entity": "#minecraft:skeletons"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 12,
+    "levels": 6,
+    "reputation_track": "MONSTER_HUNTING",
+    "reputation_amount": 20,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

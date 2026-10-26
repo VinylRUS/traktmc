@@ -1,0 +1,35 @@
+{
+  "id": "zombie_cull",
+  "title_key": "quest.trakt.daily.zombie_cull.title",
+  "offer_keys": [
+    "quest.trakt.daily.zombie_cull.offer.1",
+    "quest.trakt.daily.zombie_cull.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.zombie_cull.completion.1",
+    "quest.trakt.daily.zombie_cull.completion.2",
+    "quest.trakt.daily.zombie_cull.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.zombie_cull.progress"
+  },
+  "goals": [
+    {
+      "id": "zombies",
+      "kind": "kill_entity",
+      "amount": 8,
+      "key": "daily.zombie_cull.progress",
+      "entity": "#minecraft:zombies"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 6,
+    "levels": 4,
+    "reputation_track": "MONSTER_HUNTING",
+    "reputation_amount": 15,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

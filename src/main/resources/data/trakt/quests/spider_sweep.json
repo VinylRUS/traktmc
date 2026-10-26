@@ -1,0 +1,35 @@
+{
+  "id": "spider_sweep",
+  "title_key": "quest.trakt.daily.spider_sweep.title",
+  "offer_keys": [
+    "quest.trakt.daily.spider_sweep.offer.1",
+    "quest.trakt.daily.spider_sweep.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.spider_sweep.completion.1",
+    "quest.trakt.daily.spider_sweep.completion.2",
+    "quest.trakt.daily.spider_sweep.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.spider_sweep.progress"
+  },
+  "goals": [
+    {
+      "id": "spiders",
+      "kind": "kill_entity",
+      "amount": 6,
+      "key": "daily.spider_sweep.progress",
+      "entity": "#trakt:spiders"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 6,
+    "levels": 4,
+    "reputation_track": "MONSTER_HUNTING",
+    "reputation_amount": 15,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

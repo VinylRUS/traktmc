@@ -1,0 +1,87 @@
+{
+  "id": "coal_mining",
+  "title_key": "quest.trakt.daily.coal.title",
+  "offer_keys": [
+    "quest.trakt.daily.coal.offer.1",
+    "quest.trakt.daily.coal.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.coal.completion.1",
+    "quest.trakt.daily.coal.completion.2",
+    "quest.trakt.daily.coal.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.coal.progress"
+  },
+  "goals": [
+    {
+      "id": "iron",
+      "kind": "collect_item",
+      "amount": 40,
+      "key": "daily.iron.progress",
+      "salt": "daily.coal.iron",
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "id": "coal",
+      "kind": "collect_item",
+      "amount": 50,
+      "key": "daily.smith.coal.progress",
+      "salt": "daily.smith.coal",
+      "item": "minecraft:coal"
+    }
+  ],
+  "completion_mode": "questmaster",
+  "rewards": {
+    "silvermarks": 12,
+    "levels": 6,
+    "reputation_track": "CRAFTING",
+    "reputation_amount": 20,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:iron_ingot",
+          "count": 16
+        },
+        {
+          "item": "minecraft:coal",
+          "count": 32
+        }
+      ]
+    },
+    {
+      "id": "diamonds",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:diamond",
+          "count": 2
+        }
+      ],
+      "gate": "diamonds"
+    },
+    {
+      "id": "coins",
+      "silvermarks": 12
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true,
+  "turn_in": [
+    {
+      "item": "minecraft:raw_iron",
+      "count": 40,
+      "salt": "daily.coal.iron"
+    },
+    {
+      "item": "minecraft:coal",
+      "count": 50,
+      "salt": "daily.smith.coal"
+    }
+  ]
+}

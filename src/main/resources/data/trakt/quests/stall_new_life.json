@@ -1,0 +1,51 @@
+{
+  "id": "stall_new_life",
+  "title_key": "quest.trakt.daily.stall.title",
+  "offer_keys": [
+    "quest.trakt.daily.stall.offer.1",
+    "quest.trakt.daily.stall.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.stall.completion.1",
+    "quest.trakt.daily.stall.completion.2",
+    "quest.trakt.daily.stall.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.stall.progress"
+  },
+  "goals": [
+    {
+      "id": "breed",
+      "kind": "breed_animal",
+      "amount": 10,
+      "key": "daily.stall.breed.progress",
+      "salt": "daily.stall.breed"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 3,
+    "levels": 2,
+    "reputation_track": "ANIMALS",
+    "reputation_amount": 10,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:golden_carrot",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "coins",
+      "silvermarks": 3
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true
+}

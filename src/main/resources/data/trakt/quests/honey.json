@@ -1,0 +1,60 @@
+{
+  "id": "honey",
+  "title_key": "quest.trakt.daily.honey.title",
+  "offer_keys": [
+    "quest.trakt.daily.honey.offer.1",
+    "quest.trakt.daily.honey.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.honey.completion.1",
+    "quest.trakt.daily.honey.completion.2",
+    "quest.trakt.daily.honey.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.honey.progress"
+  },
+  "goals": [
+    {
+      "id": "honey",
+      "kind": "harvest_hive",
+      "amount": 5,
+      "key": "daily.honey.progress",
+      "salt": "daily.honey.honey",
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "id": "comb",
+      "kind": "harvest_hive",
+      "amount": 2,
+      "key": "daily.honeycomb.progress",
+      "salt": "daily.honey.comb",
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 3,
+    "levels": 2,
+    "reputation_track": "FARMING",
+    "reputation_amount": 10,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:golden_carrot",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "coins",
+      "silvermarks": 3
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true
+}

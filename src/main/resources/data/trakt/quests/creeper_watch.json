@@ -1,0 +1,35 @@
+{
+  "id": "creeper_watch",
+  "title_key": "quest.trakt.daily.creeper_watch.title",
+  "offer_keys": [
+    "quest.trakt.daily.creeper_watch.offer.1",
+    "quest.trakt.daily.creeper_watch.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.creeper_watch.completion.1",
+    "quest.trakt.daily.creeper_watch.completion.2",
+    "quest.trakt.daily.creeper_watch.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.creeper_watch.progress"
+  },
+  "goals": [
+    {
+      "id": "creepers",
+      "kind": "kill_entity",
+      "amount": 4,
+      "key": "daily.creeper_watch.progress",
+      "entity": "minecraft:creeper"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 12,
+    "levels": 6,
+    "reputation_track": "MONSTER_HUNTING",
+    "reputation_amount": 20,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

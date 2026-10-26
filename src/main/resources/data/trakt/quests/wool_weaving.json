@@ -1,0 +1,35 @@
+{
+  "id": "wool_weaving",
+  "title_key": "quest.trakt.daily.wool.title",
+  "offer_keys": [
+    "quest.trakt.daily.wool.offer.1",
+    "quest.trakt.daily.wool.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.wool.completion.1",
+    "quest.trakt.daily.wool.completion.2",
+    "quest.trakt.daily.wool.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.wool.progress_shear_only"
+  },
+  "goals": [
+    {
+      "id": "sheep",
+      "kind": "shear_sheep",
+      "amount": 10,
+      "key": "daily.sheep.progress",
+      "salt": "daily.wool.sheep"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 6,
+    "levels": 4,
+    "reputation_track": "ANIMALS",
+    "reputation_amount": 15,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

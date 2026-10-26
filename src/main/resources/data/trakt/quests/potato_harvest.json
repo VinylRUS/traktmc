@@ -1,0 +1,60 @@
+{
+  "id": "potato_harvest",
+  "title_key": "quest.trakt.daily.potato.title",
+  "offer_keys": [
+    "quest.trakt.daily.potato.offer.1",
+    "quest.trakt.daily.potato.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.potato.completion.1",
+    "quest.trakt.daily.potato.completion.2",
+    "quest.trakt.daily.potato.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.potato.progress"
+  },
+  "goals": [
+    {
+      "id": "potato",
+      "kind": "collect_item",
+      "amount": 30,
+      "key": "daily.potato.progress",
+      "salt": "daily.potato.potato",
+      "item": "minecraft:potato"
+    },
+    {
+      "id": "carrot",
+      "kind": "collect_item",
+      "amount": 30,
+      "key": "daily.carrot.progress",
+      "salt": "daily.potato.carrot",
+      "item": "minecraft:carrot"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 3,
+    "levels": 2,
+    "reputation_track": "FARMING",
+    "reputation_amount": 10,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:golden_carrot",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "coins",
+      "silvermarks": 3
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true
+}

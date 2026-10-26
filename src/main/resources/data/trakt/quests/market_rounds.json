@@ -1,0 +1,40 @@
+{
+  "id": "market_rounds",
+  "title_key": "quest.trakt.daily.market_rounds.title",
+  "offer_keys": [
+    "quest.trakt.daily.market_rounds.offer.1",
+    "quest.trakt.daily.market_rounds.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.market_rounds.completion.1",
+    "quest.trakt.daily.market_rounds.completion.2",
+    "quest.trakt.daily.market_rounds.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.market_rounds.progress"
+  },
+  "goals": [
+    {
+      "id": "visits",
+      "kind": "visit_villagers",
+      "amount": 10,
+      "key": "daily.market_rounds.visits"
+    },
+    {
+      "id": "trades",
+      "kind": "villager_trade",
+      "amount": 5,
+      "key": "daily.market_rounds.trades"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 6,
+    "levels": 4,
+    "reputation_track": "TRADE",
+    "reputation_amount": 15,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

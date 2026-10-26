@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "trakt:guild_notice_post",
+    "trakt:relay_post",
+    "trakt:quest_board"
+  ]
+}

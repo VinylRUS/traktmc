@@ -1,0 +1,64 @@
+{
+  "id": "woodcutting",
+  "title_key": "quest.trakt.daily.wood.title",
+  "offer_keys": [
+    "quest.trakt.daily.wood.offer.1",
+    "quest.trakt.daily.wood.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.wood.completion.1",
+    "quest.trakt.daily.wood.completion.2",
+    "quest.trakt.daily.wood.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.wood.progress"
+  },
+  "goals": [
+    {
+      "id": "wood",
+      "kind": "break_block",
+      "amount": 64,
+      "key": "daily.wood.progress",
+      "salt": "daily.wood.log",
+      "block": "#minecraft:logs"
+    },
+    {
+      "id": "coal",
+      "kind": "break_block",
+      "amount": 32,
+      "key": "daily.coal.progress",
+      "salt": "daily.coal.coal",
+      "block": "#minecraft:coal_ores"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 6,
+    "levels": 4,
+    "reputation_track": "CRAFTING",
+    "reputation_amount": 15,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:iron_ingot",
+          "count": 16
+        },
+        {
+          "item": "minecraft:coal",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "coins",
+      "silvermarks": 8
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true
+}

@@ -1,0 +1,35 @@
+{
+  "id": "pet_collar",
+  "title_key": "quest.trakt.daily.pet_collar.title",
+  "offer_keys": [
+    "quest.trakt.daily.pet_collar.offer.1",
+    "quest.trakt.daily.pet_collar.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.pet_collar.completion.1",
+    "quest.trakt.daily.pet_collar.completion.2",
+    "quest.trakt.daily.pet_collar.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.pet_collar.progress"
+  },
+  "goals": [
+    {
+      "id": "recolors",
+      "kind": "recolor_collar",
+      "amount": 3,
+      "key": "daily.pet_collar.progress",
+      "salt": "daily.pet_collar.recolors"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 3,
+    "levels": 2,
+    "reputation_track": "ANIMALS",
+    "reputation_amount": 10,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

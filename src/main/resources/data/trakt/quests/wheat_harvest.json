@@ -1,0 +1,77 @@
+{
+  "id": "wheat_harvest",
+  "title_key": "quest.trakt.daily.wheat.title",
+  "offer_keys": [
+    "quest.trakt.daily.wheat.offer.1",
+    "quest.trakt.daily.wheat.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.wheat.completion.1",
+    "quest.trakt.daily.wheat.completion.2",
+    "quest.trakt.daily.wheat.completion.3"
+  ],
+  "progress": {
+    "stages": [
+      "quest.trakt.daily.wheat.stage.1",
+      "quest.trakt.daily.wheat.stage.2",
+      "quest.trakt.daily.wheat.stage.3"
+    ]
+  },
+  "goals": [
+    {
+      "id": "wheat",
+      "kind": "collect_item",
+      "amount": 42,
+      "key": "daily.wheat.progress",
+      "salt": "daily.wheat.crop",
+      "item": "minecraft:wheat"
+    },
+    {
+      "id": "bread",
+      "kind": "craft_item",
+      "amount": 6,
+      "key": "daily.bread.progress",
+      "salt": "daily.wheat.bread",
+      "item": "minecraft:bread",
+      "base_key": "daily.bread.last_crafted"
+    }
+  ],
+  "completion_mode": "questmaster",
+  "rewards": {
+    "silvermarks": 3,
+    "levels": 2,
+    "reputation_track": "FARMING",
+    "reputation_amount": 10,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:golden_carrot",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": "coins",
+      "silvermarks": 5
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true,
+  "turn_in": [
+    {
+      "item": "minecraft:wheat",
+      "count": 24,
+      "salt": "daily.wheat.crop"
+    },
+    {
+      "item": "minecraft:bread",
+      "count": 6,
+      "salt": "daily.wheat.bread"
+    }
+  ]
+}

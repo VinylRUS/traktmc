@@ -1,0 +1,60 @@
+{
+  "id": "autumn_harvest",
+  "title_key": "quest.trakt.daily.autumn.title",
+  "offer_keys": [
+    "quest.trakt.daily.autumn.offer.1",
+    "quest.trakt.daily.autumn.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.autumn.completion.1",
+    "quest.trakt.daily.autumn.completion.2",
+    "quest.trakt.daily.autumn.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.autumn.progress"
+  },
+  "goals": [
+    {
+      "id": "pumpkin",
+      "kind": "break_block",
+      "amount": 12,
+      "key": "daily.autumn.pumpkin.progress",
+      "salt": "daily.autumn.pumpkin",
+      "block": "minecraft:pumpkin"
+    },
+    {
+      "id": "melon",
+      "kind": "break_block",
+      "amount": 12,
+      "key": "daily.autumn.melon.progress",
+      "salt": "daily.autumn.melon",
+      "block": "minecraft:melon"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 6,
+    "levels": 4,
+    "reputation_track": "FARMING",
+    "reputation_amount": 15,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:golden_carrot",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "coins",
+      "silvermarks": 3
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true
+}

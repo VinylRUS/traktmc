@@ -1,0 +1,43 @@
+{
+  "id": "village_trading",
+  "title_key": "quest.trakt.daily.trade.title",
+  "offer_keys": [
+    "quest.trakt.daily.trade.offer.1",
+    "quest.trakt.daily.trade.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.trade.completion.1",
+    "quest.trakt.daily.trade.completion.2",
+    "quest.trakt.daily.trade.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.trade.progress"
+  },
+  "goals": [
+    {
+      "id": "trades",
+      "kind": "villager_trade",
+      "amount": 20,
+      "key": "daily.trade.progress",
+      "salt": "daily.trade.trades"
+    },
+    {
+      "id": "emeralds",
+      "kind": "villager_trade",
+      "amount": 30,
+      "key": "daily.trade.emerald.progress",
+      "salt": "daily.trade.emerald",
+      "item": "minecraft:emerald"
+    }
+  ],
+  "completion_mode": "automatic",
+  "rewards": {
+    "silvermarks": 12,
+    "levels": 6,
+    "reputation_track": "TRADE",
+    "reputation_amount": 20,
+    "items": []
+  },
+  "repeat": "daily",
+  "enabled": true
+}

@@ -1,0 +1,91 @@
+{
+  "id": "smith_smelting",
+  "title_key": "quest.trakt.daily.smelt.title",
+  "offer_keys": [
+    "quest.trakt.daily.smelt.offer.1",
+    "quest.trakt.daily.smelt.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.smelt.completion.1",
+    "quest.trakt.daily.smelt.completion.2",
+    "quest.trakt.daily.smelt.completion.3"
+  ],
+  "progress": {
+    "stages": [
+      "quest.trakt.daily.smelt.stage.1",
+      "quest.trakt.daily.smelt.stage.2",
+      "quest.trakt.daily.smelt.stage.3"
+    ]
+  },
+  "goals": [
+    {
+      "id": "ore",
+      "kind": "collect_item",
+      "amount": 100,
+      "key": "daily.smith_smelt.ore.progress",
+      "salt": "daily.smelting.ore",
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "id": "ingot",
+      "kind": "smelt_item",
+      "amount": 50,
+      "key": "daily.smith_smelt.ingot.progress",
+      "salt": "daily.smelting.ingot",
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "completion_mode": "questmaster",
+  "rewards": {
+    "silvermarks": 12,
+    "levels": 6,
+    "reputation_track": "CRAFTING",
+    "reputation_amount": 20,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:iron_ingot",
+          "count": 16
+        },
+        {
+          "item": "minecraft:coal",
+          "count": 32
+        }
+      ]
+    },
+    {
+      "id": "diamonds",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:diamond",
+          "count": 2
+        }
+      ],
+      "gate": "diamonds"
+    },
+    {
+      "id": "coins",
+      "silvermarks": 12
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true,
+  "turn_in": [
+    {
+      "item": "minecraft:raw_iron",
+      "count": 50,
+      "salt": "daily.smelting.ore"
+    },
+    {
+      "item": "minecraft:iron_ingot",
+      "count": 50,
+      "salt": "daily.smelting.ingot"
+    }
+  ]
+}

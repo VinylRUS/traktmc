@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "trakt",
+  "version": "${version}",
+  "name": "Trakt",
+  "description": "Trakt turns settlements into living RPG hubs with dynamic caravans, player-to-player relays, custom JSON quests, and guild progression.",
+  "authors": [
+    "VinylRUS",
+    "TopasMusic"
+  ],
+  "license": [
+    "LGPL-3.0-only"
+  ],
+  "icon": "assets/trakt/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.trakt.Trakt"
+    ],
+    "client": [
+      "de.trakt.client.TraktClient"
+    ]
+  },
+  "mixins": [
+    "trakt.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": ">=0.161.0+26.3"
+  },
+  "credits": "Based on Village Quest by TopasMusic (LGPL-3.0). Not affiliated with the original project."
+}

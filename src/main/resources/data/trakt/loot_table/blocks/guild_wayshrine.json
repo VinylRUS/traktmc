@@ -1,0 +1,1 @@
+{"type":"minecraft:block","pools":[{"rolls":1,"entries":[{"type":"minecraft:item","name":"trakt:guild_wayshrine"}],"conditions":[{"condition":"minecraft:block_state_property","block":"trakt:guild_wayshrine","properties":{"half":"lower"}},{"condition":"minecraft:survives_explosion"}]}]}

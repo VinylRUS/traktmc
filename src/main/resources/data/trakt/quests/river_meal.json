@@ -1,0 +1,67 @@
+{
+  "id": "river_meal",
+  "title_key": "quest.trakt.daily.river.title",
+  "offer_keys": [
+    "quest.trakt.daily.river.offer.1",
+    "quest.trakt.daily.river.offer.2"
+  ],
+  "completion_keys": [
+    "quest.trakt.daily.river.completion.1",
+    "quest.trakt.daily.river.completion.2",
+    "quest.trakt.daily.river.completion.3"
+  ],
+  "progress": {
+    "key": "quest.trakt.daily.river.progress"
+  },
+  "goals": [
+    {
+      "id": "fish",
+      "kind": "catch_fish",
+      "amount": 10,
+      "key": "daily.river.fish.progress",
+      "salt": "daily.river.fish",
+      "base_key": "daily.river.last_fish_caught"
+    },
+    {
+      "id": "cooked",
+      "kind": "smelt_item",
+      "amount": 5,
+      "key": "daily.river.cooked_fish.progress",
+      "salt": "daily.river.cooked",
+      "item": "#trakt:cooked_fish"
+    }
+  ],
+  "completion_mode": "questmaster",
+  "turn_in": [
+    {
+      "item": "#trakt:cooked_fish",
+      "count": 5,
+      "salt": "daily.river.cooked"
+    }
+  ],
+  "rewards": {
+    "silvermarks": 6,
+    "levels": 4,
+    "reputation_track": "FARMING",
+    "reputation_amount": 15,
+    "items": []
+  },
+  "extra_choices": [
+    {
+      "id": "supplies",
+      "silvermarks": 0,
+      "items": [
+        {
+          "item": "minecraft:golden_carrot",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "coins",
+      "silvermarks": 6
+    }
+  ],
+  "repeat": "daily",
+  "enabled": true
+}
